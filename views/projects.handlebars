@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Portfolio</title>
+  <link rel="shortcut icon" href="/assets/img/favicon.png" />
+</head>
+
+<body>
+  <section id="content">
+    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        {{#for 0 Projects.length 1}}
+          <li data-target="#carouselIndicators"></li>
+        {{/for}}
+      </ol>
+      <div class="carousel-inner">
+        {{#each Projects}}
+          {{#if this.active}}
+            <div class="carousel-item active selection"  id={{this.URL}}>
+          {{else}}
+            <div class="carousel-item selection"  id={{this.URL}}>
+          {{/if}}
+            <img class="d-block w-100" src={{this.image}} alt={{this.caption}}>
+            <div class="carousel-caption d-none d-md-block" id=caption>
+              <h5>{{this.caption}}</h5>
+              <p >{{this.description}}</p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </section>
+  <section id="footer">
+    Footer
+  </section>
+  <script src="/assets/bundle.js"></script>
+</body>
+
+</html>
