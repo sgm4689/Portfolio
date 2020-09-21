@@ -14,7 +14,8 @@ const angelsDangerousGame = (req, res) => {
     Description: "A 3rd person, 2.5d dungeon crawler where you play as a man who was possessed by a fallen angel. " +
       "The angel offers the player power, in the form of powerful abilities it can use to attack the enemies. " +
       " However each gives the angel more power over the player. " +
-      " As the angels begins to gain control over the player, they start to lose cotrol of their body, with the angel starting to exert its will over where the player aims, and eventually even where they move.",
+      " As the angels begins to gain control over the player they start to lose cotrol of their body. " +
+      " As this happens the angel starting to exert its will over where the player aims and eventually even where they move.",
     URLs: ["assets/img/pongTitle.png", "assets/img/pongTitle.png"],
     Role: "I worked in a small team for this project.  My contributions were the AI, and part of the player controls. " +
       " The AI itself is pretty simple, as it just follows the player if it gets in range.  I also implemented the 'angel controls'. " +
@@ -47,7 +48,8 @@ const bulletHell = (req, res) => {
 //     Description: "A prototype graphics engine, capable of rendering 3D models, particle effects, and shaders.",
 //     URLs: [],
 //     Role: "I worked in a small group for this project, working with DirectX11. " +
-//       " The goal of the engine was to help get an understanding of the fundamentals of Graphics Engines.  I did this by starting with rendering simple shapes, and simple transforms." +
+//       " The goal of the engine was to help get an understanding of the fundamentals of Graphics Engines. "+
+//       " I did this by starting with rendering simple shapes, and simple transforms." +
 //       " Afterwords more support for "
 //   });
 // };
@@ -59,7 +61,8 @@ const pong = (req, res) => {
     URLs: [],
     Role: "I worked solo on this project, with my main goal being to learn more about machine learning. " +
       " In order to bring the Machine Learning opponent to life, I used Tensorflow.js, a library built for creating neural networks. " +
-      " The AI was trained through NeuroEvolution, a process in which you create hundreds of randomly generated Neural Networks, run them through a test and then choose the best ones to move on. " +
+      " The AI was trained through NeuroEvolution, a process in which you create hundreds of randomly generated Neural Networks" +
+      " and run them through a test and then choose the best ones to move on. " +
       " For this specific project, the networks were set up against a paddle that would never miss the paddle, but always hit it on a different point. " +
       " This meant that the AI would keep going, until they finally missed a ball.  The AI were then given a score based on the number of volleys they hit." +
       " The resulting AI wasn't perfect, however it gave me some valuable insight into how Neural Networks functioned."
