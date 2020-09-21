@@ -37,7 +37,8 @@ const bulletHell = (req, res) => {
       " The 3rd and final normal enemy moves in a circle, and shoots a ring of bulltes.  Finally, the boss had a variety of attacks it could randomly choose from. " +
       " These attacks ranged from filling the screen with hundreds of bullets, to summoning some of the earlier enemies as minions. " +
       " The bosses attacks were mostly random, but there was some rules preventing him from summoning too many enemies at once, or from constantly using the same attacks." +
-      " This project started as a school project, however I did extensive work on it afterwards, adding in different player characters, power ups, and the 3rd enemy listed above."
+      " This project started as a school project, however I did extensive work on it afterwards," +
+      " adding in different player characters, power ups, and the 3rd enemy listed above."
 
   });
 };
@@ -80,7 +81,8 @@ const guessThatPainting = (req, res) => {
       " To allow for multiple people to connect to the game, I used Socket.io. " +
       " In order to play, players were given a javascript canvas, along with some pre-built drawing tools.  They would then be given a word which they had to draw." +
       " All other players would have to try and guess what the person was drawing, with the first person to get it right getting to go next. " +
-      " The words were all stored in a MongoDB database, which the players were communicating with through an express server. In addition, the site uses react to render itself" +
+      " The words were all stored in a MongoDB database, which the players were communicating with through an express server. " +
+      " In addition, the site uses react to render itself" +
       " Some other features were that players could create an account on the site, which allowed them to save some of their favorite drawings."
 
   });
