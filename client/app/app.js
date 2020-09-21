@@ -17,7 +17,7 @@ const InDepth = (props) =>{
         <div className="imageContainer">
           {
             props.example.URLs.map((value, index) =>{
-              return <img src={value} alt={index} className="exampleImg" width="200" height="200"></img>
+              return <img src={value} alt={index} className="exampleImg img-thumbnail" width="200" height="200"></img>
             })
           }
         </div>
@@ -28,12 +28,6 @@ const InDepth = (props) =>{
 
 
 const setup = () =>{
-
-  // ReactRom.render(
-  //   <Carousel projects = {[]} , document.querySelector("#content")/>
-  // );
-
-
     ReactDOM.render(
       <InDepth example = {[]} />, document.querySelector("#footer")
     );

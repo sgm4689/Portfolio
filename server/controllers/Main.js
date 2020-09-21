@@ -18,7 +18,7 @@ const cSharp = (req, res) => {
       URL: "/ADG",
       active: true
     }, {
-      image: "assets/img/placeholder2.png",
+      image: "assets/img/bulletDisplay2.png",
       caption: "Bulle 'Hell'",
       description: "Made in MonoGame",
       URL: "/BH",
@@ -27,20 +27,20 @@ const cSharp = (req, res) => {
   });
 };
 
-
-
-const cPlus = (req, res) => {
-  return res.render('projects', {
-    title: "C++ Projects",
-    Projects: [{
-      image: "assets/img/placeholder1.png",
-      caption: "Prototype Graphics Engine",
-      description: "Made with DirectX11",
-      URL: "/PGE",
-      active: true
-    }]
-  });
-};
+//
+//
+// const cPlus = (req, res) => {
+//   return res.render('projects', {
+//     title: "C++ Projects",
+//     Projects: [{
+//       image: "assets/img/placeholder1.png",
+//       caption: "Prototype Graphics Engine",
+//       description: "Made with DirectX11",
+//       URL: "/PGE",
+//       active: true
+//     }]
+//   });
+// };
 
 const javaScript = (req, res) => {
   return res.render('projects', {
@@ -70,6 +70,6 @@ const aboutMe = (req, res) => {
 
 
 module.exports.cSharp = cSharp;
-module.exports.cPlus = cPlus;
+//module.exports.cPlus = cPlus;
 module.exports.javaScript = javaScript;
 module.exports.about = aboutMe;

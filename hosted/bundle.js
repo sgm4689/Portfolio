@@ -22,7 +22,7 @@ var InDepth = function InDepth(props) {
         return (/*#__PURE__*/React.createElement("img", {
             src: value,
             alt: index,
-            className: "exampleImg",
+            className: "exampleImg img-thumbnail",
             width: "200",
             height: "200"
           })
@@ -33,9 +33,6 @@ var InDepth = function InDepth(props) {
 };
 
 var setup = function setup() {
-  // ReactRom.render(
-  //   <Carousel projects = {[]} , document.querySelector("#content")/>
-  // );
   ReactDOM.render( /*#__PURE__*/React.createElement(InDepth, {
     example: []
   }), document.querySelector("#footer"));

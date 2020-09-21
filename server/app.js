@@ -6,7 +6,6 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const expressHandlebars = require('express-handlebars');
 const session = require('express-session');
-const url = require('url');
 
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 

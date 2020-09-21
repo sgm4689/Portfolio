@@ -8,13 +8,13 @@
 
 <body>
   <section id="content">
-    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
       <ol class="carousel-indicators">
         {{#for 0 Projects.length 1}}
           <li data-target="#carouselIndicators"></li>
         {{/for}}
       </ol>
-      <div class="carousel-inner">
+      <div class="carousel-inner" >
         {{#each Projects}}
           {{#if this.active}}
             <div class="carousel-item active selection"  id={{this.URL}}>
