@@ -29,7 +29,7 @@ const bulletHell = (req, res) => {
   return res.json({
     Name: "Bullet 'Hell'",
     Description: "A top down Bullet hell shooter, set in hell.  You play as a fighter pulot trying to fight is way out",
-    URLs: ["assets/img/bulletBoss.png", "assets/img/bulletLvl1.png", "assets/img/BulletLvl2.png"],
+    URLs: ["assets/img/bulletBoss.png", "assets/img/bulletLvl1.png", "assets/img/bulletLvl2.png"],
     Role: "I worked in a small team for this project.  My contributions were to the AI of the various enemies. " +
       " The first enemy the player meets moves left and right, and shoots 2 bullets down at the player. " +
       " The 2nd enemy the player meets moves towards the player and shoots 3 bullets in a cone. " +
