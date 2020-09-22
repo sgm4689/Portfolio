@@ -12,7 +12,7 @@ const cSharp = (req, res) => {
   return res.render('projects', {
     title: "C# Projects",
     Projects: [{
-      image: "assets/img/placeholder1.png",
+      image: "assets/img/angelTitle.png",
       caption: "Angels Dangerous Game",
       description: "Made in Unity",
       URL: "/ADG",

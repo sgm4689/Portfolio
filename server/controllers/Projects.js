@@ -14,12 +14,10 @@ const angelsDangerousGame = (req, res) => {
     Description: "A 3rd person, 2.5d dungeon crawler where you play as a man who was possessed by a fallen angel. " +
       "The angel offers the player power, in the form of powerful abilities it can use to attack the enemies. " +
       " However each gives the angel more power over the player. " +
-      " As the angels begins to gain control over the player they start to lose cotrol of their body. " +
-      " As this happens the angel starting to exert its will over where the player aims and eventually even where they move.",
-    URLs: ["assets/img/pongTitle.png", "assets/img/pongTitle.png"],
+      " This game was made in a quick, 4 week sprint. ",
+    URLs: ["assets/img/angelShockwave.png", "assets/img/angelControl.png"],
     Role: "I worked in a small team for this project.  My contributions were the AI, and part of the player controls. " +
-      " The AI itself is pretty simple, as it just follows the player if it gets in range." +
-      "  I also implemented the 'angel controls'. " +
+      " The AI itself is pretty simple, as it just follows the player if it gets in range.  I also implemented the 'angel controls'. " +
       " The more control the angel had, the stronger its effects and the longer they were applied."
 
   });
@@ -35,14 +33,10 @@ const bulletHell = (req, res) => {
     Role: "I worked in a small team for this project.  My contributions were to the AI of the various enemies. " +
       " The first enemy the player meets moves left and right, and shoots 2 bullets down at the player. " +
       " The 2nd enemy the player meets moves towards the player and shoots 3 bullets in a cone. " +
-      " The 3rd and final normal enemy moves in a circle, and shoots a ring of bulltes." +
-      "  Finally, the boss had a variety of attacks it could randomly choose from. " +
-      " These attacks ranged from filling the screen with hundreds of bullets," +
-      " to summoning some of the earlier enemies as minions. " +
-      " The bosses attacks were mostly random, but there was some rules preventing" +
-      " him from summoning too many enemies at once, or from constantly using the same attacks." +
-      " This project started as a school project, however I did extensive work on it afterwards," +
-      " adding in different player characters, power ups, and the 3rd enemy listed above."
+      " The 3rd and final normal enemy moves in a circle, and shoots a ring of bulltes.  Finally, the boss had a variety of attacks it could randomly choose from. " +
+      " These attacks ranged from filling the screen with hundreds of bullets, to summoning some of the earlier enemies as minions. " +
+      " The bosses attacks were mostly random, but there was some rules preventing him from summoning too many enemies at once, or from constantly using the same attacks." +
+      " This project started as a school project, however I did extensive work on it afterwards, adding in different player characters, power ups, and the 3rd enemy listed above."
 
   });
 };
@@ -68,9 +62,8 @@ const pong = (req, res) => {
       " In order to bring the Machine Learning opponent to life, I used Tensorflow.js, a library built for creating neural networks. " +
       " The AI was trained through NeuroEvolution, a process in which you create hundreds of randomly generated Neural Networks" +
       " and run them through a test and then choose the best ones to move on. " +
-      " For this specific project, the networks were set up against a paddle that would never miss the paddle," +
-      " but always hit it on a different point.  This meant that the AI would keep going, until they finally missed a ball. " +
-      " The AI were then given a score based on the number of volleys they hit." +
+      " For this specific project, the networks were set up against a paddle that would never miss the paddle, but always hit it on a different point. " +
+      " This meant that the AI would keep going, until they finally missed a ball.  The AI were then given a score based on the number of volleys they hit." +
       " The resulting AI wasn't perfect, however it gave me some valuable insight into how Neural Networks functioned."
 
   });
@@ -86,8 +79,7 @@ const guessThatPainting = (req, res) => {
       " To allow for multiple people to connect to the game, I used Socket.io. " +
       " In order to play, players were given a javascript canvas, along with some pre-built drawing tools.  They would then be given a word which they had to draw." +
       " All other players would have to try and guess what the person was drawing, with the first person to get it right getting to go next. " +
-      " The words were all stored in a MongoDB database, which the players were communicating with through an express server." +
-      " In addition, the site uses react to render itself" +
+      " The words were all stored in a MongoDB database, which the players were communicating with through an express server. In addition, the site uses react to render itself" +
       " Some other features were that players could create an account on the site, which allowed them to save some of their favorite drawings."
 
   });
