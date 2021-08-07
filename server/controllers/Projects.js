@@ -8,6 +8,18 @@
   }]
 */
 
+/*
+  CCCCCCCCCCCCCCCCC                          #          #
+  C                                          #          #
+  C                                 ###############################
+  C                                          #          #
+  C                                          #          #
+  C                                          #          #
+  C                                 ###############################
+  C                                          #          #
+  CCCCCCCCCCCCCCCC                           #          #
+*/
+
 const angelsDangerousGame = (req, res) => {
   return res.json({
     Name: "Angels Dangerous Game",
@@ -53,6 +65,19 @@ const bulletHell = (req, res) => {
 //   });
 // };
 
+
+/*
+         JJJJJJJJJJJJJJJJ         SSSSSSSSSSSSSSSSSS
+                JJJ               S
+                JJJ               S
+                JJJ               S
+                JJJ               SSSSSSSSSSSSSSSSSS
+      JJJ       JJJ                                S
+      JJJ       JJJ                                S
+      JJJ       JJJ                                S
+        JJJJJJJJJJJ               SSSSSSSSSSSSSSSSSS
+*/
+
 const pong = (req, res) => {
   return res.json({
     Name: "Neural Network Pong'",
@@ -84,6 +109,54 @@ const guessThatPainting = (req, res) => {
 
   });
 };
+
+
+/*
+         MMMM       MMMM     IIIIIIIIIIIIIIII        SSSSSSSSSSSSSSSSSS          CCCCCCCCCCCCCCCCCCCCC
+         M   M     M   M            II               S                           C
+         M    M   M    M            II               S                           C
+         M     M M     M            II               S                           C
+         M      M      M            II               S                           C
+         M             M            II               SSSSSSSSSSSSSSSSSS          C
+         M             M            II                                S          C
+         M             M            II                                S          C
+         M             M            II                                S          C
+         M             M     IIIIIIIIIIIIIIII        SSSSSSSSSSSSSSSSSS          CCCCCCCCCCCCCCCCCCCCC
+*/
+
+
+
+const merger = (req, res) => {
+  return res.json({
+    Name: "Excel Spreadsheet Merger'",
+    Description: "An excel merger used to combine hondreds of spreadsheets so they can be analyzed",
+    URLs: [],
+    Role: "I worked solo on this project, while on internship. " +
+      " During my internship, one of the projects I was tasked to do was create a script that would take in hundreds of excel " +
+      " spreadsheets, and combine them into one massive spreadsheet.  This would make analysis of the data much easier.  However, " +
+      " the main problem with this assignment is that the spreadsheets didn't have a standardized format, so the data had to be manipulated " +
+      " so that they could be combined into one spreadsheet. The script was written in R." +
+
+  });
+};
+
+
+const dashboard = (req, res) => {
+  return res.json({
+    Name: "Power BI Dashboards",
+    Description: "A variety of Data Visualization done in Power BI",
+    URLs: [""],
+    Role: "I worked solo on this project, creating roughly 6 dashboards. " +
+      " In order to bring the Machine Learning opponent to life, I used Tensorflow.js, a library built for creating neural networks. " +
+      " The AI was trained through NeuroEvolution, a process in which you create hundreds of randomly generated Neural Networks" +
+      " and run them through a test and then choose the best ones to move on. " +
+      " For this specific project, the networks were set up against a paddle that would never miss the paddle, but always hit it on a different point. " +
+      " This meant that the AI would keep going, until they finally missed a ball.  The AI were then given a score based on the number of volleys they hit." +
+      " The resulting AI wasn't perfect, however it gave me some valuable insight into how Neural Networks functioned."
+
+  });
+};
+
 
 
 module.exports.ADG = angelsDangerousGame;

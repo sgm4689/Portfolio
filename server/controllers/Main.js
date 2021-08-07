@@ -27,20 +27,27 @@ const cSharp = (req, res) => {
   });
 };
 
-//
-//
-// const cPlus = (req, res) => {
-//   return res.render('projects', {
-//     title: "C++ Projects",
-//     Projects: [{
-//       image: "assets/img/placeholder1.png",
-//       caption: "Prototype Graphics Engine",
-//       description: "Made with DirectX11",
-//       URL: "/PGE",
-//       active: true
-//     }]
-//   });
-// };
+
+
+const misc = (req, res) => {
+  return res.render('projects', {
+    title: "Miscellaneous Projects",
+    Projects: [{
+      image: "assets/img/placeholder1.png",
+      caption: "Excel File Merger",
+      description: "Made in R",
+      URL: "/merger",
+      active: true
+    },
+    {
+        image: "assets/img/pongTitle.png",
+        caption: "Power BI Dashboards",
+        description: "Made in Power BI",
+        URL: "/dashboard",
+        active: false
+      },]
+  });
+};
 
 const javaScript = (req, res) => {
   return res.render('projects', {
@@ -70,6 +77,6 @@ const aboutMe = (req, res) => {
 
 
 module.exports.cSharp = cSharp;
-//module.exports.cPlus = cPlus;
+module.exports.misc = misc;
 module.exports.javaScript = javaScript;
 module.exports.about = aboutMe;
