@@ -25,7 +25,7 @@ const angelsDangerousGame = (req, res) => {
     Name: "Angel's Dangerous Game",
     Description: "A 3rd person, 2.5d dungeon crawler where you play as a man who is possessed by a fallen angel. " +
       "The angel offers the player power, in the form of abilities it can use to attack the enemies. " +
-      " However each gives the angel more power over the player. " +
+      " However this gives the angel more control over the player. " +
       " This game was made in a quick, 4 week sprint. ",
     URLs: ["assets/img/angelShockwave.png", "assets/img/angelControl.png"],
     Role: "I worked in a small team for this project.  My contributions were the AI, and part of the player controls. " +
@@ -41,7 +41,7 @@ const angelsDangerousGame = (req, res) => {
 const bulletHell = (req, res) => {
   return res.json({
     Name: "Bullet 'Hell'",
-    Description: "A top down Bullet hell shooter, set in hell.  You play as a fighter pulot trying to fight is way out",
+    Description: "A top down Bullet hell shooter, set in hell.  You play as a fighter pilot trying to fight is way out",
     URLs: ["assets/img/bulletBoss.png", "assets/img/bulletLvl1.png", "assets/img/bulletLvl2.png"],
     Role: "I worked in a small team for this project.  My contributions were to the AI of the various enemies. " +
       " The first enemy the player meets moves left and right, and shoots 2 bullets down at the player. " +
@@ -105,7 +105,7 @@ const guessThatPainting = (req, res) => {
       " To allow for multiple people to connect to the game, I used Socket.io. " +
       " In order to play, players were given a javascript canvas, along with some pre-built drawing tools.  They would then be given a word which they had to draw." +
       " All other players would have to try and guess what the person was drawing, with the first person to get it right getting to go next. " +
-      " The words were all stored in a MongoDB database, which the players were communicating with through an express server. In addition, the site uses react to render itself" +
+      " The words were all stored in a MongoDB database, which the players were communicating with through an express server. In addition, the site was created using react." +
       " Some other features were that players could create an account on the site, which allowed them to save some of their favorite drawings."
 
   });
