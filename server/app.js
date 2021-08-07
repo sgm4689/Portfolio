@@ -18,7 +18,7 @@ let hbs = expressHandlebars.create({
     for: function(start, end, increase, block) {
       let value = '';
       for (let i = start; i < end; i += increase)
-        value += block.fn(i);
+        value += block.fn(i) +;
       return value;
     }
   }
