@@ -105,7 +105,7 @@ const guessThatPainting = (req, res) => {
       " To allow for multiple people to connect to the game, I used Socket.io. " +
       " In order to play, players were given a javascript canvas, along with some pre-built drawing tools.  They would then be given a word which they had to draw." +
       " All other players would have to try and guess what the person was drawing, with the first person to get it right getting to go next. " +
-      " The words were all stored in a MongoDB database, which the players were communicating with through an express server. In addition, the site was created using react." +
+      " The words were all stored in a MongoDB database, which the players were communicating with through an express server. The site was created using a combination of React and Handlebars." +
       " Some other features were that players could create an account on the site, which allowed them to save some of their favorite drawings."
 
   });
