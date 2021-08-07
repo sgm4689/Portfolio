@@ -22,15 +22,16 @@
 
 const angelsDangerousGame = (req, res) => {
   return res.json({
-    Name: "Angels Dangerous Game",
-    Description: "A 3rd person, 2.5d dungeon crawler where you play as a man who was possessed by a fallen angel. " +
-      "The angel offers the player power, in the form of powerful abilities it can use to attack the enemies. " +
+    Name: "Angel's Dangerous Game",
+    Description: "A 3rd person, 2.5d dungeon crawler where you play as a man who is possessed by a fallen angel. " +
+      "The angel offers the player power, in the form of abilities it can use to attack the enemies. " +
       " However each gives the angel more power over the player. " +
       " This game was made in a quick, 4 week sprint. ",
     URLs: ["assets/img/angelShockwave.png", "assets/img/angelControl.png"],
     Role: "I worked in a small team for this project.  My contributions were the AI, and part of the player controls. " +
       " The AI itself is pretty simple, as it just follows the player if it gets in range.  I also implemented the 'angel controls'. " +
-      " The more control the angel had, the stronger its effects and the longer they were applied."
+      " The more control the angel had, the stronger its effects and the longer they were applied.  These effects made it harder for the " +
+      " player to aim their attacks, and to move through the dungeon."
 
   });
 };
@@ -100,7 +101,7 @@ const guessThatPainting = (req, res) => {
     Name: "Guess That Painting'",
     Description: "A guessing game where one player is given a randomly generated word, and all other players need to guess what it is",
     URLs: ["assets/img/paintingDrawing.png", "assets/img/paintingGuess.png"],
-    Role: "I worked in a solo for this project, with my main goal learning more on networking, and databases. " +
+    Role: "I worked solo for this project, with my main goal learning more on networking, and databases. " +
       " To allow for multiple people to connect to the game, I used Socket.io. " +
       " In order to play, players were given a javascript canvas, along with some pre-built drawing tools.  They would then be given a word which they had to draw." +
       " All other players would have to try and guess what the person was drawing, with the first person to get it right getting to go next. " +
@@ -129,13 +130,13 @@ const guessThatPainting = (req, res) => {
 const merger = (req, res) => {
   return res.json({
     Name: "Excel Spreadsheet Merger'",
-    Description: "An excel merger used to combine hondreds of spreadsheets so they can be analyzed",
+    Description: "An excel merger used to combine spreadsheets so they can be analyzed",
     URLs: [],
     Role: "I worked solo on this project, while on internship. " +
       " During my internship, one of the projects I was tasked to do was create a script that would take in hundreds of excel " +
       " spreadsheets, and combine them into one massive spreadsheet.  This would make analysis of the data much easier.  However, " +
       " the main problem with this assignment is that the spreadsheets didn't have a standardized format, so the data had to be manipulated " +
-      " so that they could be combined into one spreadsheet. The script was written in R." +
+      " so that it could be combined into one spreadsheet. The script was written in R."
 
   });
 };
@@ -144,15 +145,15 @@ const merger = (req, res) => {
 const dashboard = (req, res) => {
   return res.json({
     Name: "Power BI Dashboards",
-    Description: "A variety of Data Visualization done in Power BI",
-    URLs: [""],
+    Description: "A variety of Data Visualization's created in Power BI",
+    URLs: [],
     Role: "I worked solo on this project, creating roughly 6 dashboards. " +
-      " In order to bring the Machine Learning opponent to life, I used Tensorflow.js, a library built for creating neural networks. " +
-      " The AI was trained through NeuroEvolution, a process in which you create hundreds of randomly generated Neural Networks" +
-      " and run them through a test and then choose the best ones to move on. " +
-      " For this specific project, the networks were set up against a paddle that would never miss the paddle, but always hit it on a different point. " +
-      " This meant that the AI would keep going, until they finally missed a ball.  The AI were then given a score based on the number of volleys they hit." +
-      " The resulting AI wasn't perfect, however it gave me some valuable insight into how Neural Networks functioned."
+      " During my internship, one of my tasks was to create a series of dashboards that gave a high level overview of various " +
+      " pieces of data.  These dashboards were designed so that they would fit on a single 16x9 canvas, so that the user could get " +
+      " all the information that they needed without having to go anywhere else. For each dashboard, I would be given a set of data, and was " +
+      " told to create 2-3 visualizations to highlight the important values of those datasets. " /*+ "  *NOTE* The dashboards I created are for internal use, " +
+      " so I can't show any photo's of them.  Instead, I've recreated the general format of one of these dashboards.  All of the data inside is made up,  " +
+      " but the layout of where things are positioned matches what I actually created."*/
 
   });
 };
@@ -161,6 +162,8 @@ const dashboard = (req, res) => {
 
 module.exports.ADG = angelsDangerousGame;
 module.exports.BH = bulletHell;
+module.exports.dashboard = dashboard;
+module.exports.merger = merger;
 //module.exports.PGE = graphicsEngine;
 module.exports.NNP = pong;
 module.exports.GTP = guessThatPainting;

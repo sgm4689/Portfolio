@@ -13,13 +13,13 @@ const cSharp = (req, res) => {
     title: "C# Projects",
     Projects: [{
       image: "assets/img/angelTitle.png",
-      caption: "Angels Dangerous Game",
+      caption: "Angel's Dangerous Game",
       description: "Made in Unity",
       URL: "/ADG",
       active: true
     }, {
       image: "assets/img/bulletDisplay2.png",
-      caption: "Bulle 'Hell'",
+      caption: "Bullet 'Hell'",
       description: "Made in MonoGame",
       URL: "/BH",
       active: false
@@ -33,14 +33,14 @@ const misc = (req, res) => {
   return res.render('projects', {
     title: "Miscellaneous Projects",
     Projects: [{
-      image: "assets/img/placeholder1.png",
+      image: "assets/img/mergerTitle.png",
       caption: "Excel File Merger",
       description: "Made in R",
       URL: "/merger",
       active: true
     },
     {
-        image: "assets/img/pongTitle.png",
+        image: "assets/img/dashboardTitle.png",
         caption: "Power BI Dashboards",
         description: "Made in Power BI",
         URL: "/dashboard",
