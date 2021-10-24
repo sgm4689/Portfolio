@@ -2,6 +2,7 @@ const redirect = (response) => {
   window.location = response.redirect;
 };
 
+//Helper function to send ajax to the server
 const sendAjax = (type, action, data, success) => {
   $.ajax({
     cashe: false,
